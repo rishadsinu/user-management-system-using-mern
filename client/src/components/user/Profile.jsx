@@ -56,7 +56,6 @@ const Profile = () => {
       const uploadedImage = await res.json();
       
       if (uploadedImage.secure_url) {
-        // Update the profile with the new image URL
         const response = await axiosInstance.put("/user/profile", {
           ...editData,
           profileImage: uploadedImage.secure_url

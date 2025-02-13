@@ -3,7 +3,6 @@ import userReducer from './slices/authSlice';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-// Persist configuration
 const persistConfig = {
   key: 'root',
   storage,
